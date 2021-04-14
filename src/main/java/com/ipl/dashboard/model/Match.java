@@ -5,7 +5,7 @@ import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Entity
-public class MatchData {
+public class Match {
     @Id
     private long id;
     private String city;
@@ -16,7 +16,7 @@ public class MatchData {
     private String team2;
     private String tossWinner;
     private String tossDecision;
-    private String matchWinner;
+    private String winner;
     private String result;
     private String resultMargin;
     private String umpire1;
@@ -94,12 +94,12 @@ public class MatchData {
         this.tossDecision = tossDecision;
     }
 
-    public String getMatchWinner() {
-        return matchWinner;
+    public String getWinner() {
+        return winner;
     }
 
-    public void setMatchWinner(String matchWinner) {
-        this.matchWinner = matchWinner;
+    public void setWinner(String winner) {
+        this.winner = winner;
     }
 
     public String getResult() {
